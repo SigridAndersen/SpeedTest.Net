@@ -8,26 +8,15 @@
     <PackageTags>speedtest,speedtest.net</PackageTags>
     <PackOnBuild>true</PackOnBuild>
     <Authors>Uladzimir Kazakevich,Brendan Grant,Chino Chang</Authors>
-    <PackageId>SpeedTest.Net</PackageId>
-    <PackageVersion>1.4.0</PackageVersion>
-    <PackageProjectUrl>https://github.com/JoyMoe/SpeedTest.Net</PackageProjectUrl>
-    <PackageLicense>LICENSE</PackageLicense>
-    <Title>SpeedTest.Net</Title>
-    <LangVersion>8</LangVersion>
+    <PackageId>Cloud101.SpeedTest</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageProjectUrl>https://github.com/cx-cloud-101/Cloud101.SpeedTest</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <Title>Cloud101.SpeedTest</Title>
   </PropertyGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-    <Reference Include="System.Web" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="..\LICENSE">
-      <Link>LICENSE</Link>
-    </Content>
   </ItemGroup>
 
 </Project>
