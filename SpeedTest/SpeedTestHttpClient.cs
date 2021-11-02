@@ -2,7 +2,6 @@
 using System.Globalization;
 using System.IO;
 using System.Net.Http;
-using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Web;
 using System.Xml.Serialization;
@@ -15,20 +14,8 @@ namespace SpeedTest
 
         public SpeedTestHttpClient()
         {
-            var frameworkInfo = RuntimeInformation.FrameworkDescription.Split();
-            var frameworkName = $"{frameworkInfo[0]}{frameworkInfo[1]}";
-
-            var osInfo = RuntimeInformation.OSDescription.Split();
-
             DefaultRequestHeaders.Add("Accept", "text/html, application/xhtml+xml, */*");
-            DefaultRequestHeaders.Add("User-Agent", string.Join(" ", new string[]
-            {
-                "Mozilla/5.0",
-                $"({osInfo[0]}-{osInfo[1]}; U; {RuntimeInformation.ProcessArchitecture}; en-us)",
-                $"{frameworkName}/{frameworkInfo[2]}",
-                "(KHTML, like Gecko)",
-                $"SpeedTest.Net/{typeof(ISpeedTestClient).Assembly.GetName().Version}"
-            }));
+            DefaultRequestHeaders.Add("User-Agent", "(KHTML, like Gecko)");
         }
 
         public async Task<T> GetConfig<T>(string url)
