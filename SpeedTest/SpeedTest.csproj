@@ -6,7 +6,7 @@
     <Version>1.0.0</Version>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>speedtest,speedtest.net</PackageTags>
-    <PackOnBuild>true</PackOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Uladzimir Kazakevich,Brendan Grant,Chino Chang</Authors>
     <PackageId>Cloud101.SpeedTest</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
