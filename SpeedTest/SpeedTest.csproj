@@ -3,20 +3,30 @@
   <PropertyGroup>
     <Description>SpeedTest.Net client library to test internet bandwidth using speedtest.net</Description>
     <TargetFramework>net5.0</TargetFramework>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>speedtest,speedtest.net</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Uladzimir Kazakevich,Brendan Grant,Chino Chang</Authors>
     <PackageId>Cloud101.SpeedTest</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageProjectUrl>https://github.com/cx-cloud-101/Cloud101.SpeedTest</PackageProjectUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <Title>Cloud101.SpeedTest</Title>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/cx-cloud-101/Cloud101.SpeedTest.git</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <DebugType>Portable</DebugType>
+    <PackageIcon>cloud101.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="cloud101.png" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
